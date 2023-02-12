@@ -1,0 +1,86 @@
+@charset "UTF-8";
+
+/**
+ * Theme Name: WP-TEST
+ * Theme URI: https://grace-create.com
+ * Author: G-REATE
+ * Author URI: https://grace-create.com
+ * Description: WPテストテーマ
+ * Version: 1.0.0
+ * License: GNU General Public License v2 or later
+ * License URI: http://www.gnu.org/licenses/gpl.html
+ * tags: grid-layout,
+ one-column,
+ two-columns,
+ right-sidebar,
+ accessibility-ready,
+ block-styles,
+ custom-background,
+ custom-colors,
+ custom-header,
+ custom-logo,
+ custom-menu,
+ featured-image-header,
+ featured-images,
+ footer-widgets,
+ post-formats,
+ blog
+ * Text Domain: wp_test
+ */
+
+.img1{
+    padding:0;
+    margin:0;
+}
+#image1 {
+    width:100%;
+    min-height: 500px;
+    /*height: 100%;*/
+    object-fit: cover;
+    object-position: 50% 100%;
+    margin:0 0 0 0;
+    padding: 0 0 0 0;
+}
+.center {
+    padding:40px;
+    text-align: center;
+}
+.Bold{
+    font-weight:700;
+}
+.cssgrid {
+    width :100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-auto-rows: 1fr;
+    grid-gap: 1em;
+    padding: 0;
+    margin: 0;
+}
+.cssgrid>#block {
+    overflow: auto;
+    min-width: 0;
+    padding: 0;
+}
+
+.block{
+    position:relative;
+    text-align:center;
+    width:100%;
+    margin:0px;
+    background-color: #DDDDDD;
+}
+.block:before {
+    content: '';
+    display: block;
+    padding-top: 100%;
+}
+.block p{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+    width:100%;
+    margin:0;
+    padding: 0;
+}
